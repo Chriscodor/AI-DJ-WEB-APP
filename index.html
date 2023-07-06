@@ -17,17 +17,28 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
-<body background="bg.gif">
+<body background="background.jpg">
 <center>
-  	<h3 class="btn-grad heading">💃 AI DJ PARTY MASTER 🕺
+  	<h3 class="btn-grad heading">AI DJ WEB APP
 	    <br>
-	    <span class="note">NOTE - Move your left-hand wrist up and down to play Peter pan song .
-        Get your right-hand wrist in front of the webcam to play Harry Potter Theme Song.
-        keep at least 2 feet distance from the webcam, so that your wrists are detected quickley.
-      </span>
+	    <span class="note">NOTE - Move your left-hand wrist up and down for increasing and decreasing the volume. 
+        Move your right-hand wrist up and down for increasing and decreasing the speed</span>
   	</h3>
-    <h3 id="song_name" class="btn btn-danger">Song name</h3>
+    <div class="div_speed">
+      <img src="disk.gif" class="div_speed_img">
+      <br>
+      <h3 class="btn btn-danger" id="speed">Speed</h3>
+    </div>
+
+    <div class="div_volume">
+      <img src="disk.gif" class="div_volume_img">
+      <br>
+      <h3 class="btn btn-danger" id="volume">Volume</h3>
+    </div>
 	<br><br>
+  <button class="btn btn-success play_button" onclick="playMusic()">
+  Play
+</button>
 </center>
 
 <script src="main.js"></script>
